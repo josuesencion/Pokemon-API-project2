@@ -1,11 +1,11 @@
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{pokemon.name}}</h5>
-      <p class="card-text">weight: {{pokemon.weight}}</p>
-      <p class="card-text">Order: {{pokemon.order}}</p>
-      <p class="card-text">Ability: {{pokemon.abilities[0].ability.name}}</p>
-      <p class="card-text">Move: {{pokemon.moves[0].move.name}}</p>
-      <a routerLink="/pokemonlist" class="btn btn-primary">Back to the list</a>
-    </div>
+
+  <div>
+    <h3>{{pokemon.name}}</h3>
+    <ul>
+      <li>weight: {{pokemon.weight}}</li>
+      <li>Order: {{pokemon.order}}</li>
+      <li>Ability: {{pokemon.abilities[0].ability.name}}</li>
+      <li>Move: {{pokemon.moves[0].move.name}}</li>
+    </ul>
+    <a routerLink="/pokemonlist" class="btn btn-primary">Back to the list</a>
   </div>
