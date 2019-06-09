@@ -8,6 +8,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'home', component: HomeComponent}, 
+  {path: '', component: HomeComponent}, 
   {path: 'pokemonlist', component: PokemonListComponent},
   {path: 'pokemonlist/:id', component: PokemonDetailsComponent}
 ];
