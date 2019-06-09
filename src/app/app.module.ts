@@ -1,18 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule} from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PokemonService } from './pokemon.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    PokemonService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
