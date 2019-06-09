@@ -14,8 +14,8 @@ export class PokemonListComponent implements OnInit {
 
   constructor(private _pokemonService: PokemonService, private router: Router) { }
 
-  onSelect(pokemon){
-    this.router.navigate(['/pokemonlist', pokemon.name])
+  onSelect(id: number){
+    this.router.navigate(['/pokemonlist', id])
   }
 
   ngOnInit() {

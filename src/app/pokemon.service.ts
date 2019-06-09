@@ -15,4 +15,9 @@ export class PokemonService {
   getPokemonList(){
     return this.http.get(this._url);
   }
+
+  getPokemonDetails(pNumber: number){
+    let url = `${this._url}${pNumber}`;
+    return this.http.get(url);
+  }
 }
